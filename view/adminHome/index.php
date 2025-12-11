@@ -69,7 +69,7 @@
           </div><!-- menu-item -->
         </a><!-- br-menu-link -->
         <ul class="br-menu-sub nav flex-column">
-          <li class="nav-item"><a href="chart-morris.html" class="nav-link">Morris Charts</a></li>
+          <li class="nav-item"><a href="chart-morris.html" class="nav-link">carlos</a></li>
           <li class="nav-item"><a href="chart-flot.html" class="nav-link">Flot Charts</a></li>
           <li class="nav-item"><a href="chart-chartjs.html" class="nav-link">Chart JS</a></li>
           <li class="nav-item"><a href="chart-rickshaw.html" class="nav-link">Rickshaw</a></li>
