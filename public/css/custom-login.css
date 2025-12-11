@@ -1,0 +1,97 @@
+/*
+ * Archivo: public/css/custom-login.css
+ * Paleta de Colores: #0511F2 (Azul Principal), #070B59 (Azul Oscuro), #F2CB05 (Amarillo Acento)
+ */
+
+/* 1. Fondo Moderno */
+.bg-br-primary {
+  background-color: #070B59 !important; /* Azul Oscuro */
+}
+
+/* 2. Contenedor de Login */
+.login-wrapper {
+  border-radius: 12px !important;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3) !important;
+}
+
+/* 3. Estilo del Logo */
+.signin-logo img {
+  width: auto;
+  max-height: 50px;
+  margin-bottom: 20px;
+}
+
+.tx-center.mg-b-60 {
+  margin-bottom: 40px !important;
+  color: #6c757d;
+  font-size: 14px;
+}
+
+/* 4. Campos de Formulario */
+.form-control {
+  border: 1px solid #ced4da;
+  border-radius: 8px;
+  padding: 10px 15px;
+  transition: all 0.3s ease;
+}
+
+.form-control:focus {
+  border-color: #0511F2; /* Borde al hacer foco: Azul Principal */
+  box-shadow: 0 0 0 0.2rem rgba(5, 17, 242, 0.25);
+}
+
+/* 5. Estilos para Mostrar/Ocultar Contraseña */
+.input-group {
+  position: relative;
+}
+
+.field-icon {
+  float: right;
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  z-index: 10;
+  color: #0d0d0d;
+  padding: 5px;
+}
+
+.input-group .form-control {
+  padding-right: 40px;
+}
+
+
+/* 6. Botón de Iniciar Sesión */
+.btn-info, .btn-info:hover, .btn-info:focus {
+  background-color: #0511F2 !important; /* Azul Principal */
+  border-color: #0511F2 !important;
+  color: white !important;
+  font-weight: bold;
+  border-radius: 8px;
+  padding: 10px 0;
+  transition: background-color 0.3s ease;
+}
+
+.btn-info:hover {
+  background-color: #040DBF !important;
+}
+
+/* 7. Enlaces */
+.tx-info, .tx-info:hover {
+  color: #F2CB05 !important; /* Amarillo Acento */
+  font-weight: 500;
+}
+
+.mg-t-60 {
+  margin-top: 40px !important;
+}
+
+/* *** RESPONSIVIDAD ADICIONAL PARA MÓVILES *** */
+@media (max-width: 576px) {
+    .login-wrapper {
+        width: 90% !important; 
+        max-width: 350px !important; 
+        padding: 30px 20px !important;
+    }
+}
