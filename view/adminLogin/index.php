@@ -67,7 +67,7 @@ if (isset($_POST["Enviar"]) and $_POST["Enviar"] == "si") {
                 </div>
                 <div class="form-group">
                     <div class="input-group">
-                        <input type="password" id=" pass" name="pass" class="form-control" placeholder="Ingresa tu contraseña">
+                        <input type="password" id="password-field pass" name="pass" class="form-control" placeholder="Ingresa tu contraseña">
                         <span toggle="#password-field" class="fa fa-fw fa-eye field-icon toggle-password"></span>
                     </div>
                     <a href="" class="tx-info tx-12 d-block mg-t-10">¿Olvidaste tu contraseña?</a>

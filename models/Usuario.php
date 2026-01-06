@@ -10,8 +10,6 @@ class Usuario extends Conectar
             $correo = $_POST["correo"];
             $pass = $_POST["pass"];
 
-            echo "correcto";
-
 
             if (empty($correo) and empty($pass)) {
                 /* En caso esten vacíos correo y contraseña, devolver al index con mensaje = 2 */
