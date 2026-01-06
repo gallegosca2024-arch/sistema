@@ -27,6 +27,6 @@ class Conectar {
     }
 
     public static function ruta() {
-        return "http://localhost/SISTEMA_CERTIFICACION/";
+        return "http://localhost/sistema/";
     }
 }

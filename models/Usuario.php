@@ -1,9 +1,7 @@
 <?php
-class Usuario extends Conectar
-{
+class Usuario extends Conectar{
     /* Función para login de acceso de usuarios*/
-    public function login()
-    {
+    public function login(){
         $conectar = parent::conexion();
         parent::set_names();
         if (isset($_POST["Enviar"])) {
@@ -36,5 +34,15 @@ class Usuario extends Conectar
                 }
             }
         }
+    }
+    /* Mostrar los datos del usuario segun el ID */
+    public function get_usuario_x_id($usu_id){
+        $conectar = parent::conexion();
+        parent::set_names();
+        $sql = "SELECT * FROM usuarios WHERE estado=1 AND id_usuario=?";
+        $sql = $conectar -> prepare($sql);
+        $sql -> bindValue(1, $usu_id);
+        $sql -> execute();
+        return $resultado = $sql -> fetchAll();
     }
 }
